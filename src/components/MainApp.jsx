@@ -20,8 +20,6 @@ const MainApp = () => {
         setShowAbout(false);
         setContentFlag(true);
     }
-
-   
   return (
     <div>
         <div className='sidenav'>
