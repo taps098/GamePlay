@@ -3,10 +3,9 @@ import './ColourGame.css';
 
  const ColourGame = () => {
     return (
-      <>
-      
-      {/* {imageClicked ? <NewColourGame /> : null} */}
-      </>
+      <div>
+      How many dots you want to play ?
+      </div>
     )
  }
 
