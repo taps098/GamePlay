@@ -1,0 +1,14 @@
+.imageStyle {
+    margin: 10px;
+    border-radius: 30px;
+    cursor:pointer;
+    margin: 10px;
+  }
+  .colourGameStyle {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px 0px;
+  }
+  .colourGameStyle:hover {
+    box-shadow: coral 6px 7px 10px 0px;
+  }
