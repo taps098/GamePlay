@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import MainApp from './components/MainApp';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './components/HomePage/HomePage';
@@ -9,11 +9,15 @@ import './App.css';
 
 
 function App() {
+  const [toggle, setToggle] = useState(false);
+    const toggleButtonClickHandler = () => {
+        setToggle(!toggle);
+    }
   return (
     <div className="App">
       <BrowserRouter>
-      <MainApp />
-      <div className='contentPageStyle'>
+      <MainApp toggle={toggle} toggleButtonClickHandler={toggleButtonClickHandler} />
+      <div className={!toggle ? 'contentPageStyle': "contentPageStyleClosed"}>
       <Routes>
       
       <Route path="/" element={<HomePage />} />
