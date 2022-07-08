@@ -3,19 +3,39 @@
   height: 100vh;
   width: 100%;
 }
+body{
+  padding-top: 0px;
+  background-color: #eeee;
+  font-family: 'Noto Sans', sans-serif;
+}
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: width 1s ease;
+}
+.sideNavClosed {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: width 1s ease;
 }
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  /* padding: 6px 8px 6px 16px; */
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -23,12 +43,86 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin: 10px 0px 10px 0px;
 }
 .sidenav a:hover {
   color: #f1f1f1;
 }
+.sideNavClosed a {
+  /* padding: 6px 8px 6px 16px; */
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0px 10px 0px;
+}
+.sideNavClosed a:hover {
+  color: #f1f1f1;
+}
 .contentPageStyle {
   position: fixed;
-  top: 5px;
-  left: 225px;
+  top: 0px;
+  left: 250px;
+  transition: left 1s ease;
+  width: 100%;
+}
+.contentPageStyleClosed {
+  position: fixed;
+  top: 0px;
+  left: 100px;
+  transition: left 1s ease;
+  width: 100%;
+}
+.searchStyleDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0px 15px 0px;
+}
+.searchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e94f6a;
+    cursor: pointer;
+    color: white;
+  border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    box-shadow: 4px 2px 9px #e94f6a;
+}
+.serchInputStyle {
+  border-radius: 5px;
+  border: none;
+  height: 20px;
+}
+.logoStyleArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.toggleButtonStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e94f6a;
+    cursor: pointer;
+    color: white;
+  border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    box-shadow: 4px 2px 9px #e94f6a;
+}
+.logoStyle {
+  height: 50px;
+  width: 50px;
+  margin-left: -13px;
+}
+.homePageContainer {
+  margin: 20px;
 }

@@ -13,7 +13,9 @@
     box-shadow: coral 6px 7px 10px 0px;
   }
   .gameNameTextStyle {
-    text-decoration: double;
     font-weight: bold;
     margin: 10px;
+  }
+  .gameContainer {
+    margin: 20px;
   }
